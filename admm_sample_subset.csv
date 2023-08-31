@@ -1,0 +1,108 @@
+Asset Class,Asset Name,Asset Data Category,Attribute Name,Attribute Description,Attribute Status,Format,Domain Name,Measurement,Length,Precision,Scale,Minmum Value,Maximum Value,Legacy,Translation Field,Translation Table,Translation System,Shapefile Field Name
+Ancillary,Bridleway,Construct,Date of Construction,The date the asset was constructed; applicable to items built on-site. This should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,DATE_OF_CO
+,,,Departure - DAS ID,The unique identifier within the WebDAS system corresponding to an approved Departure from Standard.,Mandatory,String,,,,,,,,,,,,DEP_DAS_ID
+,,Inventory,Additional Information,"A text note to provide specific information about an asset, in cases where an attribute value is set to ""Other"".",Conditional,String,,,50,,,,,,,,,ASSET_INFO
+,,,Edging Type,The type of edging associated with this asset.,Required,String,NM_EDGING_TYPE,,,,,,,,,,,EDGE_TYPE
+,,,End Chainage,"The along carriageway position corresponding to the termination of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,ENDCHAIN
+,,,End Date,The date from which the asset ceases to be recognised under maintenance.  Note: a record of retirement will be populated.  Should take the form DD-MON-YYYY.,Optional,Date,,,,,,,,,,,,END_DATE
+,,,Length,,Mandatory,Decimal,,Metres,,,,0.1,,,,,,LENGTH_M
+,,,Location Text,"A text note to describe the local position of the asset, in generic terms.",Optional,String,,,500,,,,,,,,,AST_LOCTXT
+,,,National Highways Objective - Protect and Enhance,Objective is for this asset to protect and enhance the landscape character and quality of an area when designing new roads or improving existing roads.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_PE
+,,,National Highways Objective - Reduce Impact,Objective is for this asset to reduce the adverse effects of strategic road traffic on the countryside.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_RI
+,,,Owner,,Mandatory,String,ALL_OWNER,,,,,,,,,,,OWNER
+,,,Section,Section referencing is used to divide the network into sections. Further information can be found in section 4 of the Part 2 - Requirements and Additional Information document.,Mandatory,String,,,15,,,,,,,,,SECTION
+,,,Start Chainage,"The along carriageway position corresponding to the beginning of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,STCHAIN
+,,,Start Date,The date from which the asset is recognised in under maintenance. Should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,START_DATE
+,,,Suicide Prevention Objective,"Is this item serving a suicide prevention objective? (i.e. e. a normal, unaltered asset supporting a suicide prevention strategy).",Required,Boolean,ALL_YES_NO,,,,,,,,,,,SUI_P_OBJ
+,,,Surface Material,The surface material of the asset.,Mandatory,String,NMBW_SURFACE_MATERIAL,,,,,,,,,,,SURFACE_MA
+,,,Width,,Mandatory,Decimal,,Metres,,,,0.1,,,,,,WIDTH_M
+,,,X End (Easting),"OS Easting coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDX
+,,,X Start (Easting),"OS Easting coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTX
+,,,XSP,Defines the location of the asset across the carriageway.,Optional,String,,,3,,,,,,,,,XSP
+,,,Y End (Northing),"OS Northing coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDY
+,,,Y Start (Northing),"OS Northing coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTY
+,,Maintenance,Maintenance Contractor,Contractor responsible for maintenance of the asset. Should only be recorded if HE is responsible for the assets maintenance.,Conditional,String,,,,,,,,,,,,MAIN_CON
+,,,Maintenance Responsibility,The organisation responsible for the maintenance of the asset.,Mandatory,String,ALL_MAINTENANCE_RESPONSIBILITY,,,,,,,,,,,MAIN_REP
+,,Operate,Area/Region,,Mandatory,String,ALL_AREA_REGION,,,,,,,,,,,AREA_REG
+,,,Defect Liability Period,The end date of the supplier assurance period. Should take the form DD-MON-YYYY.,Required,Date,,,,,,,,,,,,DEF_L_P
+,,System,Source ID,"Supplier's external reference ID (scheme, major project, survey etc.).",Optional,String,,,10,,,,,,,,,OSOURCE_ID
+,,,System ID,The unique identity code for this item in its current prime system.,Optional,String,,,,,,,,,,,,SYSTEM_ID
+,Combined Cycle Track and Footway,Construct,Date of Construction,The date the asset was constructed; applicable to items built on-site. This should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,DATE_OF_CO
+,,,Departure - DAS ID,The unique identifier within the WebDAS system corresponding to an approved Departure from Standard.,Optional,String,,,,,,,,,,,,DEP_DAS_ID
+,,Inventory,Additional Information,"A text note to provide specific information about an asset, in cases where an attribute value is set to ""Other"".",Conditional,String,,,50,,,,,,,,,ASSET_INFO
+,,,Edging Type,,Required,String,NM_EDGING_TYPE,,,,,,,,,,,EDGE_TYPE
+,,,End Chainage,"The along carriageway position corresponding to the termination of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,ENDCHAIN
+,,,End Date,The date from which the asset ceases to be recognised under maintenance.  Note: a record of retirement will be populated. Should take the form DD-MON-YYYY.,Optional,Date,,,,,,,,,,,,END_DATE
+,,,Length,,Mandatory,Decimal,,Metres,,,,0.1,,,,,,LENGTH_M
+,,,Location Text,"A text note to describe the local position of the asset, in generic terms.",Optional,String,,,500,,,,,,,,,AST_LOCTXT
+,,,National Highways Objective - Protect and Enhance,Objective is for this asset to protect and enhance the landscape character and quality of an area when designing new roads or improving existing roads.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_PE
+,,,National Highways Objective - Reduce Impact,Objective is for this asset to reduce the adverse effects of strategic road traffic on the countryside.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_RI
+,,,Owner,,Mandatory,String,ALL_OWNER,,,,,,,,,,,OWNER
+,,,Section,Section referencing is used to divide the network into sections. Further information can be found in section 4 of the Part 2 - Requirements and Additional Information document.,Mandatory,String,,,15,,,,,,,,,SECTION
+,,,Start Chainage,"The along carriageway position corresponding to the beginning of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,STCHAIN
+,,,Start Date,The date from which the asset is recognised in under maintenance. Should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,START_DATE
+,,,Surface Material,The surface material of the asset.,Mandatory,String,NMCF_SURFACE_MATERIAL,,,,,,,,,,,SURFACE_MA
+,,,Width,See Rule NMCF_1.,Mandatory,Decimal,,Metres,,,,1,10,,,,,WIDTH_M
+,,,X End (Easting),"OS Easting coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDX
+,,,X Start (Easting),"OS Easting coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTX
+,,,XSP,Defines the location of the asset across the carriageway (see Rule NMCF_6).,Optional,String,,,3,,,,,,,,,XSP
+,,,Y End (Northing),"OS Northing coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDY
+,,,Y Start (Northing),"OS Northing coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTY
+,,Maintenance,Maintenance Contractor,Contractor responsible for maintenance of the asset. Should only be recorded if HE is responsible for the assets maintenance.,Conditional,String,,,,,,,,,,,,MAIN_CON
+,,,Maintenance Responsibility,The organisation responsible for the maintenance of the asset.,Mandatory,String,ALL_MAINTENANCE_RESPONSIBILITY,,,,,,,,,,,MAIN_REP
+,,Operate,Area/Region,,Mandatory,String,ALL_AREA_REGION,,,,,,,,,,,AREA_REG
+,,,Defect Liability Period,The end date of the supplier assurance period. Should take the form DD-MON-YYYY.,Required,Date,,,,,,,,,,,,DEF_L_P
+,,System,Source ID,"Supplier's external reference ID (scheme, major project, survey etc.).",Optional,String,,,10,,,,,,,,,OSOURCE_ID
+,,,System ID,The unique identity code for this item in its current prime system.,Optional,String,,,,,,,,,,,,SYSTEM_ID
+Test,Slab,Construct,Date of Construction,The date the asset was constructed; applicable to items built on-site. This should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,DATE_OF_CO
+,,,Departure - DAS ID,The unique identifier within the WebDAS system corresponding to an approved Departure from Standard.,Mandatory,String,,,,,,,,,,,,DEP_DAS_ID
+,,Inventory,Additional Information,"A text note to provide specific information about an asset, in cases where an attribute value is set to ""Other"".",Conditional,String,,,50,,,,,,,,,ASSET_INFO
+,,,Edging Type,The type of edging associated with this asset.,Required,String,NM_EDGING_TYPE,,,,,,,,,,,EDGE_TYPE
+,,,End Chainage,"The along carriageway position corresponding to the termination of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,ENDCHAIN
+,,,End Date,The date from which the asset ceases to be recognised under maintenance.  Note: a record of retirement will be populated.  Should take the form DD-MON-YYYY.,Optional,Date,,,,,,,,,,,,END_DATE
+,,,Length,,Mandatory,Decimal,,Metres,,,,0.1,,,,,,LENGTH_M
+,,,Location Text,"A text note to describe the local position of the asset, in generic terms.",Optional,String,,,500,,,,,,,,,AST_LOCTXT
+,,,National Highways Objective - Protect and Enhance,Objective is for this asset to protect and enhance the landscape character and quality of an area when designing new roads or improving existing roads.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_PE
+,,,National Highways Objective - Reduce Impact,Objective is for this asset to reduce the adverse effects of strategic road traffic on the countryside.,Mandatory,Boolean,ALL_YES_NO,,,,,,,,,,,HEOBJ_RI
+,,,Owner,,Mandatory,String,ALL_OWNER,,,,,,,,,,,OWNER
+,,,Section,Section referencing is used to divide the network into sections. Further information can be found in section 4 of the Part 2 - Requirements and Additional Information document.,Mandatory,String,,,15,,,,,,,,,SECTION
+,,,Start Chainage,"The along carriageway position corresponding to the beginning of a linear or polygon asset, as measured within the section.",Mandatory,Decimal,,,,4,1,,,,,,,STCHAIN
+,,,Start Date,The date from which the asset is recognised in under maintenance. Should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,START_DATE
+,,,Suicide Prevention Objective,"Is this item serving a suicide prevention objective? (i.e. e. a normal, unaltered asset supporting a suicide prevention strategy).",Required,Boolean,ALL_YES_NO,,,,,,,,,,,SUI_P_OBJ
+,,,Surface Material,The surface material of the asset.,Mandatory,String,NMBW_SURFACE_MATERIAL,,,,,,,,,,,SURFACE_MA
+,,,Width,,Mandatory,Decimal,,Metres,,,,0.1,,,,,,WIDTH_M
+,,,X End (Easting),"OS Easting coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDX
+,,,X Start (Easting),"OS Easting coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTX
+,,,XSP,Defines the location of the asset across the carriageway.,Optional,String,,,3,,,,,,,,,XSP
+,,,Y End (Northing),"OS Northing coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDY
+,,,Y Start (Northing),"OS Northing coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTY
+,,Maintenance,Maintenance Contractor,Contractor responsible for maintenance of the asset. Should only be recorded if HE is responsible for the assets maintenance.,Conditional,String,,,,,,,,,,,,MAIN_CON
+,,,Maintenance Responsibility,The organisation responsible for the maintenance of the asset.,Mandatory,String,ALL_MAINTENANCE_RESPONSIBILITY,,,,,,,,,,,MAIN_REP
+,,Operate,Area/Region,,Mandatory,String,ALL_AREA_REGION,,,,,,,,,,,AREA_REG
+,,,Defect Liability Period,The end date of the supplier assurance period. Should take the form DD-MON-YYYY.,Required,Date,,,,,,,,,,,,DEF_L_P
+,,System,Source ID,"Supplier's external reference ID (scheme, major project, survey etc.).",Optional,String,,,10,,,,,,,,,OSOURCE_ID
+,,,System ID,The unique identity code for this item in its current prime system.,Optional,String,,,,,,,,,,,,SYSTEM_ID
+Road Restraint,Arrester Bed,Construct,Date of Construction,The date the asset was constructed; applicable to items built on-site. This should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,DATE_OF_CO
+,,,Departure - DAS ID,The unique identifier within the WebDAS system corresponding to an approved Departure from Standard.,Mandatory,String,,,,,,,,,,,,DEP_DAS_ID
+,,Inventory,Additional Information,"A text note to provide specific information about an asset, in cases where an attribute value is set to ""Other"".",Conditional,String,,,50,,,,,,,,,ASSET_INFO
+,,,Area,,Mandatory,Decimal,,Metres,,,,,,,,,,AREA
+,,,End Chainage,"The along carriageway position corresponding to the termination of a linear or polygon asset, as measured within the section (see Rule RRAB_1).",Mandatory,Decimal,,,,4,1,,,,,,,ENDCHAIN
+,,,End Date,The date from which the asset ceases to be recognised under maintenance.  Note: a record of retirement will be populated. Should take the form DD-MON-YYYY.,Optional,Date,,,,,,,,,,,,END_DATE
+,,,Length,,Mandatory,Decimal,,Metres,,,,23,130,,,,,LENGTH_M
+,,,Location Text,"A text note to describe the local position of the asset, in generic terms.",Optional,String,,,500,,,,,,,,,AST_LOCTXT
+,,,Owner,See Rule RRAB_2.,Mandatory,String,ALL_OWNER,,,,,,,,,,,OWNER
+,,,Section,Section referencing is used to divide the network into sections. Further information can be found in section 4 of the Part 2 - Requirements and Additional Information document.,Mandatory,String,,,15,,,,,,,,,SECTION
+,,,Start Chainage,"The along carriageway position corresponding to the beginning of a linear or polygon asset, as measured within the section (see Rule RRAB_1).",Mandatory,Decimal,,,,4,1,,,,,,,STCHAIN
+,,,Start Date,The date from which the asset is recognised in under maintenance. Should take the form DD-MON-YYYY.,Mandatory,Date,,,,,,,,,,,,START_DATE
+,,,Type,,Optional,String,RRAB_TYPE,,,,,,,,,,,TYPE
+,,,X End (Easting),"OS Easting coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDX
+,,,X Start (Easting),"OS Easting coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTX
+,,,XSP,Defines the location of the asset across the carriageway (see Rule RRAB_5).,Optional,String,,,3,,,,,,,,,XSP
+,,,Y End (Northing),"OS Northing coordinate, at the end of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,ENDY
+,,,Y Start (Northing),"OS Northing coordinate, at the beginning of the asset.",Mandatory,Decimal,,,,9,3,,,,,,,STARTY
+,,Maintenance,Maintenance Contractor,Contractor responsible for maintenance of the asset. Should only be recorded if HE is responsible for the assets maintenance.,Conditional,String,,,,,,,,,,,,MAIN_CON
+,,,Maintenance Responsibility,The organisation responsible for the maintenance of the asset.,Mandatory,String,ALL_MAINTENANCE_RESPONSIBILITY,,,,,,,,,,,MAIN_REP
+,,Operate,Area/Region,,Mandatory,String,ALL_AREA_REGION,,,,,,,,,,,AREA_REG
+,,,Defect Liability Period,The end date of the supplier assurance period. Should take the form DD-MON-YYYY.,Required,Date,,,,,,,,,,,,DEF_L_P
+,,System,Source ID,"Supplier's external reference ID (scheme, major project, survey etc.).",Optional,String,,,10,,,,,,,,,OSOURCE_ID
+,,,System ID,The unique identity code for this item in its current prime system.,Optional,String,,,,,,,,,,,,SYSTEM_ID
